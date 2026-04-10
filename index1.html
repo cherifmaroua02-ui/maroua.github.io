@@ -5,12 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portfolio - SO27B</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
 body {
   margin:0;
-  font-family: 'Segoe UI', sans-serif;
-  background:#0d1117;
-  color:#c9d1d9;
+  font-family:'Inter', sans-serif;
+  background:#0f172a;
+  color:#e2e8f0;
 }
 
 /* NAVBAR */
@@ -18,79 +20,94 @@ nav {
   display:flex;
   justify-content:center;
   gap:40px;
-  padding:15px;
-  background:#010409;
-  position:sticky;
-  top:0;
+  padding:20px;
+  background:#020617;
+  border-bottom:1px solid #1e293b;
 }
 nav a {
-  color:#c9d1d9;
+  color:#cbd5f5;
   text-decoration:none;
   font-weight:500;
+  transition:0.3s;
 }
 nav a:hover {
-  color:#58a6ff;
+  color:#38bdf8;
 }
 
 /* HEADER */
 header {
   text-align:center;
-  padding:100px 20px;
+  padding:120px 20px;
 }
 header h1 {
-  font-size:48px;
-  color:white;
+  font-size:50px;
+  margin-bottom:10px;
 }
 header p {
-  color:#8b949e;
+  color:#94a3b8;
+  font-size:18px;
 }
 
 /* SECTIONS */
 section {
   max-width:1000px;
   margin:auto;
-  padding:60px 20px;
+  padding:80px 20px;
 }
 h2 {
-  color:white;
+  font-size:28px;
   margin-bottom:30px;
+  border-left:4px solid #38bdf8;
+  padding-left:10px;
 }
 
 /* PROJECTS */
 .project {
-  background:#161b22;
-  padding:20px;
-  border-radius:10px;
-  margin-bottom:20px;
-  border:1px solid #30363d;
+  background:#1e293b;
+  padding:25px;
+  border-radius:12px;
+  margin-bottom:25px;
+  transition:0.3s;
+}
+.project:hover {
+  transform:translateY(-5px);
+  background:#273549;
 }
 .project h3 {
-  color:#58a6ff;
+  color:#38bdf8;
+  margin-bottom:10px;
 }
 
-/* SKILLS (comme ton ami) */
+/* SKILLS */
 .skills {
   display:flex;
   flex-wrap:wrap;
-  gap:10px;
+  gap:12px;
 }
 .skill {
-  background:#21262d;
+  background:#334155;
   padding:8px 15px;
-  border-radius:20px;
-  border:1px solid #30363d;
+  border-radius:8px;
   font-size:14px;
+  transition:0.3s;
 }
 .skill:hover {
-  background:#30363d;
+  background:#38bdf8;
+  color:#020617;
 }
 
 /* CONTACT */
 footer {
   text-align:center;
-  padding:20px;
-  background:#010409;
-  color:#8b949e;
+  padding:30px;
+  background:#020617;
+  color:#94a3b8;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  header h1 { font-size:36px; }
+  nav { flex-direction:column; gap:15px; }
 }
 </style>
 
@@ -112,23 +129,26 @@ footer {
 
 <section id="about">
 <h2>À propos</h2>
-<p>Ingénieur spécialisé en automatisme, GTB et instrumentation.</p>
+<p>
+Ingénieur spécialisé en automatisme, GTB et instrumentation.
+Passionné par les systèmes intelligents et l’optimisation des installations industrielles.
+</p>
 </section>
 
 <section id="projects">
 <h2>Projets</h2>
 
 <div class="project">
-<h3>Projet Vision Industrielle</h3>
+<h3>Système de vision industrielle</h3>
 <p>
-Dans le cadre de mon stage chez Cofidur EMS, j’ai participé à la mise en œuvre d’un système de contrôle par vision automatique avec caméra Keyence IV4-600CA.
+Développement d’un système de contrôle qualité automatisé utilisant une caméra industrielle pour détecter les défauts en temps réel.
 </p>
 </div>
 
 <div class="project">
-<h3>Projet GTB - Loxone</h3>
+<h3>Système GTB - Loxone</h3>
 <p>
-Mise en place d’un système de gestion technique du bâtiment permettant la supervision et le contrôle des équipements.
+Mise en place d’un système de supervision et de gestion technique permettant le contrôle des équipements et la détection des anomalies.
 </p>
 </div>
 
@@ -138,8 +158,8 @@ Mise en place d’un système de gestion technique du bâtiment permettant la su
 <h2>Compétences</h2>
 
 <div class="skills">
-<div class="skill">Automatisme</div>
 <div class="skill">Siemens S7</div>
+<div class="skill">Automatisme</div>
 <div class="skill">Loxone</div>
 <div class="skill">Python</div>
 <div class="skill">Instrumentation</div>

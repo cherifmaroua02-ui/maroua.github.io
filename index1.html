@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - SO27B</title>
+
+<style>
+body {
+  margin:0;
+  font-family: 'Segoe UI', sans-serif;
+  background:#0d1117;
+  color:#c9d1d9;
+}
+
+/* NAVBAR */
+nav {
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  padding:15px;
+  background:#010409;
+  position:sticky;
+  top:0;
+}
+nav a {
+  color:#c9d1d9;
+  text-decoration:none;
+  font-weight:500;
+}
+nav a:hover {
+  color:#58a6ff;
+}
+
+/* HEADER */
+header {
+  text-align:center;
+  padding:100px 20px;
+}
+header h1 {
+  font-size:48px;
+  color:white;
+}
+header p {
+  color:#8b949e;
+}
+
+/* SECTIONS */
+section {
+  max-width:1000px;
+  margin:auto;
+  padding:60px 20px;
+}
+h2 {
+  color:white;
+  margin-bottom:30px;
+}
+
+/* PROJECTS */
+.project {
+  background:#161b22;
+  padding:20px;
+  border-radius:10px;
+  margin-bottom:20px;
+  border:1px solid #30363d;
+}
+.project h3 {
+  color:#58a6ff;
+}
+
+/* SKILLS (comme ton ami) */
+.skills {
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+.skill {
+  background:#21262d;
+  padding:8px 15px;
+  border-radius:20px;
+  border:1px solid #30363d;
+  font-size:14px;
+}
+.skill:hover {
+  background:#30363d;
+}
+
+/* CONTACT */
+footer {
+  text-align:center;
+  padding:20px;
+  background:#010409;
+  color:#8b949e;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>SO27B</h1>
+<p>Ingénieur automatisme & GTB</p>
+</header>
+
+<nav>
+<a href="#about">Accueil</a>
+<a href="#projects">Projets</a>
+<a href="#skills">Compétences</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+<h2>À propos</h2>
+<p>Ingénieur spécialisé en automatisme, GTB et instrumentation.</p>
+</section>
+
+<section id="projects">
+<h2>Projets</h2>
+
+<div class="project">
+<h3>Projet Vision Industrielle</h3>
+<p>
+Dans le cadre de mon stage chez Cofidur EMS, j’ai participé à la mise en œuvre d’un système de contrôle par vision automatique avec caméra Keyence IV4-600CA.
+</p>
+</div>
+
+<div class="project">
+<h3>Projet GTB - Loxone</h3>
+<p>
+Mise en place d’un système de gestion technique du bâtiment permettant la supervision et le contrôle des équipements.
+</p>
+</div>
+
+</section>
+
+<section id="skills">
+<h2>Compétences</h2>
+
+<div class="skills">
+<div class="skill">Automatisme</div>
+<div class="skill">Siemens S7</div>
+<div class="skill">Loxone</div>
+<div class="skill">Python</div>
+<div class="skill">Instrumentation</div>
+<div class="skill">Supervision</div>
+</div>
+
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Email : example@email.com</p>
+<p>LinkedIn : lien</p>
+</section>
+
+<footer>
+<p>© 2026 SO27B</p>
+</footer>
+
+</body>
+</html>

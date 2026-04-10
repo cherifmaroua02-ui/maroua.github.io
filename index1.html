@@ -3,66 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio | SB27</title>
+    <title>Portfolio - SB27</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">SB<span>27</span></div>
-            <ul class="nav-links">
-                <li><a href="#home">Accueil</a></li>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
+
+    <aside class="sidebar">
+        <div class="profile">
+            <div class="avatar">SB</div>
+            <h1>SB27</h1>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#home" class="active"><i class="fa fa-home"></i> Accueil</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i> À propos</a></li>
+                <li><a href="#projects"><i class="fa fa-briefcase"></i> Projets</a></li>
+                <li><a href="#contact"><i class="fa fa-envelope"></i> Contact</a></li>
             </ul>
         </nav>
-    </header>
-
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Bonjour, je suis <span class="highlight">SB27</span></h1>
-            <p>Développeur passionné par la création d'expériences numériques.</p>
-            <a href="#projects" class="btn">Voir mes travaux</a>
-        </div>
-    </section>
-
-    <section id="about">
-        <h2>À propos de moi</h2>
-        <div class="about-container">
-            <p>Bienvenue sur mon portfolio. Je me spécialise dans le développement web et la conception d'interfaces modernes.</p>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2>Mes Projets</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <div class="project-info">
-                    <h3>Projet Un</h3>
-                    <p>Description courte du projet réalisé.</p>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-info">
-                    <h3>Projet Deux</h3>
-                    <p>Description courte du projet réalisé.</p>
-                </div>
+        <div class="sidebar-footer">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
-    </section>
+    </aside>
 
-    <footer id="contact">
-        <h2>Me contacter</h2>
-        <div class="social-links">
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fas fa-envelope"></i></a>
-        </div>
-        <p>&copy; 2024 SB27 - Tous droits réservés.</p>
-    </footer>
+    <main class="main-content">
+        <section id="home" class="hero-section">
+            <div class="hero-text">
+                <h2>Salut, je suis <span class="accent">SB27</span></h2>
+                <p>Développeur & Designer Créatif</p>
+                <div class="buttons">
+                    <a href="#projects" class="btn-primary">Mes Projets</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <script src="script.js"></script>
 </body>
 </html>
